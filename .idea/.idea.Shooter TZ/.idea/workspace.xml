@@ -1,11 +1,9 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="c2bfee82-669f-4062-82d5-46dd61a891ed" name="Changes" comment="Add Player, animation and movement">
+    <list default="true" id="c2bfee82-669f-4062-82d5-46dd61a891ed" name="Changes" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/.idea.Shooter TZ/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.Shooter TZ/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Objects/Player/Player.controller" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Objects/Player/Player.controller" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Assets/Scenes/SampleScene.unity" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scenes/SampleScene.unity" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Player/MouseLook.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Player/MouseLook.cs" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -15,6 +13,13 @@
   <component name="ChangesViewManager">
     <option name="groupingKeys">
       <option value="directory" />
+    </option>
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_BRANCH_BY_REPOSITORY">
+      <map>
+        <entry key="$PROJECT_DIR$" value="backup" />
+      </map>
     </option>
   </component>
   <component name="GitHubPullRequestSearchHistory">{
@@ -32,6 +37,8 @@
   </component>
   <component name="HighlightingSettingsPerFile">
     <setting file="file://$PROJECT_DIR$/../FPS Shooter/Assets/Scripts/Player/MouseLook.cs" root0="SKIP_HIGHLIGHTING" />
+    <setting file="mock://C:/Users/louis/Shooter TZ/Assets/Objects/Player/Player.controller" root0="SKIP_HIGHLIGHTING" />
+    <setting file="mock://C:/Users/louis/Shooter TZ/Assets/Scripts/Player/MouseLook.cs" root0="SKIP_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Scripts/Player/MouseLook.cs" root0="FORCE_HIGHLIGHTING" />
   </component>
   <component name="MarkdownSettingsMigration">
@@ -111,7 +118,7 @@
       <updated>1695036557326</updated>
       <workItem from="1695036558436" duration="4018000" />
       <workItem from="1695043020263" duration="3561000" />
-      <workItem from="1695048625441" duration="4791000" />
+      <workItem from="1695048625441" duration="6258000" />
     </task>
     <task id="LOCAL-00001" summary="Initial commit">
       <created>1695048314629</created>
@@ -134,7 +141,14 @@
       <option name="project" value="LOCAL" />
       <updated>1695049289092</updated>
     </task>
-    <option name="localTasksCounter" value="4" />
+    <task id="LOCAL-00004" summary="Implemented animations for player">
+      <created>1695057145080</created>
+      <option name="number" value="00004" />
+      <option name="presentableId" value="LOCAL-00004" />
+      <option name="project" value="LOCAL" />
+      <updated>1695057145080</updated>
+    </task>
+    <option name="localTasksCounter" value="5" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -159,6 +173,7 @@
     <MESSAGE value="Initial commit" />
     <MESSAGE value="Gitignore" />
     <MESSAGE value="Add Player, animation and movement" />
-    <option name="LAST_COMMIT_MESSAGE" value="Add Player, animation and movement" />
+    <MESSAGE value="Implemented animations for player" />
+    <option name="LAST_COMMIT_MESSAGE" value="Implemented animations for player" />
   </component>
 </project>
