@@ -7,10 +7,15 @@ using UnityEngine;
 public class RayShoot : MonoBehaviour
 {
     public Camera cam;
-
+    public float damage = 25;
+    
+    public ParticleSystem shootEffect;
+    public ParticleSystem hitEffect;
+    public AudioSource shootAudio;
+    
     private void Update()
     {
-        if (Input.GetMouseButton(0))
+        if (Input.GetMouseButtonDown(0))
         {
             Shoot();
         }
@@ -18,10 +23,19 @@ public class RayShoot : MonoBehaviour
 
     void Shoot()
     {
+        shootEffect.Play();
+        shootAudio.Play();
+        
         RaycastHit hit;
         if (Physics.Raycast(cam.transform.position, cam.transform.forward, out hit))
         {
-            Debug.Log(hit.collider.name);
+            CharacterController target = hit.transform.GetComponent<CharacterController>();
+            if (target != null)
+            {
+                target.TakeDamage(10);
+            }
+
+            Instantiate(hitEffect, hit.point, Quaternion.LookRotation(hit.normal));
         }
     }
 }

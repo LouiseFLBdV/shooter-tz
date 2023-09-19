@@ -1,12 +1,14 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="c2bfee82-669f-4062-82d5-46dd61a891ed" name="Changes" comment="Add colliders and ray shoot">
+    <list default="true" id="c2bfee82-669f-4062-82d5-46dd61a891ed" name="Changes" comment="Add particle shot and hit">
+      <change beforePath="$PROJECT_DIR$/.idea/.idea.Shooter TZ/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.Shooter TZ/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Audio/ak47-1.mp3" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Audio/ak47-1.mp3.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Prefabs/HitEffect.prefab" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Prefabs/HitEffect.prefab" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Assets/Prefabs/Player.prefab" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Prefabs/Player.prefab" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Prefabs/Weapons/DesertEagle.prefab" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Prefabs/Weapons/DesertEagle.prefab" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Prefabs/Weapons/M1911.prefab" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Prefabs/Weapons/M1911.prefab" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Prefabs/Weapons/M1911.prefab.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Prefabs/Weapons/M1911.prefab.meta" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Assets/Scenes/SampleScene.unity" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scenes/SampleScene.unity" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/RayShoot.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/RayShoot.cs" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -21,7 +23,7 @@
   <component name="Git.Settings">
     <option name="RECENT_BRANCH_BY_REPOSITORY">
       <map>
-        <entry key="$PROJECT_DIR$" value="temp" />
+        <entry key="$PROJECT_DIR$" value="backupV2" />
       </map>
     </option>
     <option name="RESET_MODE" value="MIXED" />
@@ -52,6 +54,7 @@
   <component name="HighlightingSettingsPerFile">
     <setting file="file://$PROJECT_DIR$/../FPS Shooter/Assets/Scripts/Player/MouseLook.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="mock://C:/Users/louis/Shooter TZ/Assets/Scenes/SampleScene.unity" root0="SKIP_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/Scripts/CharacterController.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="mock://C:/Users/louis/Shooter TZ/Assets/Scripts/Player/MouseLook.cs" root0="SKIP_HIGHLIGHTING" />
     <setting file="mock://C:/Users/louis/Shooter TZ/Assets/Scripts/Player/MouseLook.cs" root0="SKIP_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Scripts/Player/MouseLook.cs" root0="FORCE_HIGHLIGHTING" />
@@ -218,7 +221,14 @@
       <option name="project" value="LOCAL" />
       <updated>1695084742755</updated>
     </task>
-    <option name="localTasksCounter" value="12" />
+    <task id="LOCAL-00012" summary="Add particle shot and hit">
+      <created>1695087953103</created>
+      <option name="number" value="00012" />
+      <option name="presentableId" value="LOCAL-00012" />
+      <option name="project" value="LOCAL" />
+      <updated>1695087953103</updated>
+    </task>
+    <option name="localTasksCounter" value="13" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -238,7 +248,7 @@
                   <entry key="branch">
                     <value>
                       <list>
-                        <option value="origin/master" />
+                        <option value="master" />
                       </list>
                     </value>
                   </entry>
@@ -262,6 +272,7 @@
     <MESSAGE value="temp" />
     <MESSAGE value="asd" />
     <MESSAGE value="Add colliders and ray shoot" />
-    <option name="LAST_COMMIT_MESSAGE" value="Add colliders and ray shoot" />
+    <MESSAGE value="Add particle shot and hit" />
+    <option name="LAST_COMMIT_MESSAGE" value="Add particle shot and hit" />
   </component>
 </project>
