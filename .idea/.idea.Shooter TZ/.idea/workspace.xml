@@ -1,21 +1,11 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="c2bfee82-669f-4062-82d5-46dd61a891ed" name="Changes" comment="">
+    <list default="true" id="c2bfee82-669f-4062-82d5-46dd61a891ed" name="Changes" comment="Implement Enemy System with Animation and Damage Mechanics">
       <change beforePath="$PROJECT_DIR$/.idea/.idea.Shooter TZ/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.Shooter TZ/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Prefabs/Player.prefab" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Prefabs/Player.prefab.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Prefabs/World/Medival/cart.prefab" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Prefabs/World/Medival/cart.prefab" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Prefabs/World/Medival/post.prefab" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Prefabs/World/Medival/post.prefab" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Prefabs/World/Trees/DeadOak2.prefab" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Prefabs/World/Trees/DeadOak2.prefab" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Prefabs/World/Trees/SpruceTree2.prefab" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Prefabs/World/Trees/SpruceTree2.prefab" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Prefabs/World/Trees/SpruceTree3.prefab" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Prefabs/World/Trees/SpruceTree3.prefab" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Prefabs/UI/GameInterface.prefab" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Prefabs/UI/GameInterface.prefab" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Assets/Scenes/SampleScene.unity" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scenes/SampleScene.unity" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/CharacterController.cs" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/CharacterController.cs.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Player/Movement.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Player/PlayerController.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Player/Movement.cs.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Player/PlayerController.cs.meta" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/RayShoot.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/RayShoot.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Player/PlayerController.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Player/PlayerController.cs" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -30,7 +20,7 @@
   <component name="Git.Settings">
     <option name="RECENT_BRANCH_BY_REPOSITORY">
       <map>
-        <entry key="$PROJECT_DIR$" value="backupV2" />
+        <entry key="$PROJECT_DIR$" value="backupV3" />
       </map>
     </option>
     <option name="RESET_MODE" value="MIXED" />
@@ -63,6 +53,7 @@
     <setting file="file://$PROJECT_DIR$/../FPS Shooter/Assets/Scripts/Player/MouseLook.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Scripts/EnemyData.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Scripts/Player/MouseLook.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/Scripts/Player/PlayerHealthBar.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Scripts/RayShoot.cs" root0="FORCE_HIGHLIGHTING" />
   </component>
   <component name="MarkdownSettingsMigration">
@@ -147,6 +138,7 @@
       <workItem from="1695066985655" duration="4445000" />
       <workItem from="1695073766256" duration="5659000" />
       <workItem from="1695096919415" duration="11340000" />
+      <workItem from="1695111714034" duration="2096000" />
     </task>
     <task id="LOCAL-00001" summary="Initial commit">
       <created>1695048314629</created>
@@ -239,7 +231,14 @@
       <option name="project" value="LOCAL" />
       <updated>1695091202155</updated>
     </task>
-    <option name="localTasksCounter" value="14" />
+    <task id="LOCAL-00014" summary="Implement Enemy System with Animation and Damage Mechanics">
+      <created>1695111867328</created>
+      <option name="number" value="00014" />
+      <option name="presentableId" value="LOCAL-00014" />
+      <option name="project" value="LOCAL" />
+      <updated>1695111867328</updated>
+    </task>
+    <option name="localTasksCounter" value="15" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -285,6 +284,7 @@
     <MESSAGE value="Add colliders and ray shoot" />
     <MESSAGE value="Add particle shot and hit" />
     <MESSAGE value="Implemented particles and audio for shoot" />
-    <option name="LAST_COMMIT_MESSAGE" value="Implemented particles and audio for shoot" />
+    <MESSAGE value="Implement Enemy System with Animation and Damage Mechanics" />
+    <option name="LAST_COMMIT_MESSAGE" value="Implement Enemy System with Animation and Damage Mechanics" />
   </component>
 </project>

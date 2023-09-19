@@ -7,12 +7,12 @@ public class PlayerController : MonoBehaviour
 {
     public float speed = 2;
     public float health = 100;
-    
     private float _horizontalMove;
     private float _verticalMove;
     private Vector3 _deltaMove;
     private bool _running = false;
 
+    public PlayerHealthBar playerHealthBar;
     private Animator _playerAnimator;
 
     private void Start()
@@ -66,6 +66,7 @@ public class PlayerController : MonoBehaviour
         if (health > 0)
         {
             health -= damageTaken;
+            playerHealthBar.changeHealphBar(health);
             if (health <= 0)
             {
                 Destroy(this);
