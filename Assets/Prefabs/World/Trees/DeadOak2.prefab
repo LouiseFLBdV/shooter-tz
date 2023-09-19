@@ -11,6 +11,7 @@ GameObject:
   - component: {fileID: 7425924887864594385}
   - component: {fileID: 7425924887863267313}
   - component: {fileID: 7425924887862299953}
+  - component: {fileID: 4898596094568876247}
   m_Layer: 0
   m_Name: DeadOak2
   m_TagString: Untagged
@@ -83,3 +84,16 @@ MeshRenderer:
   m_SortingLayer: 0
   m_SortingOrder: 0
   m_AdditionalVertexStreams: {fileID: 0}
+--- !u!65 &4898596094568876247
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 7425924887864234993}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Size: {x: 0.024843112, y: 0.031426303, z: 0.29889894}
+  m_Center: {x: -0.0011253289, y: 0.0009492021, z: 0.13944949}

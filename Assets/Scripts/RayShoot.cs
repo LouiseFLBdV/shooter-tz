@@ -29,7 +29,7 @@ public class RayShoot : MonoBehaviour
         RaycastHit hit;
         if (Physics.Raycast(cam.transform.position, cam.transform.forward, out hit))
         {
-            CharacterController target = hit.transform.GetComponent<CharacterController>();
+            EnemyController target = hit.transform.GetComponent<EnemyController>();
             if (target != null)
             {
                 target.TakeDamage(10);
