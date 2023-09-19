@@ -3,16 +3,19 @@ using System.Collections;
 using System.Collections.Generic;
 using Unity.VisualScripting;
 using UnityEngine;
+using UnityEngine.Serialization;
 
 public class RayShoot : MonoBehaviour
 {
     public Camera cam;
-    public float damage = 25;
-    
-    public ParticleSystem shootEffect;
     public ParticleSystem hitEffect;
-    public AudioSource shootAudio;
-    
+    public WeaponController weaponController;
+
+    private void Start()
+    {
+        weaponController = GetComponentInChildren<WeaponController>();
+    }
+
     private void Update()
     {
         if (Input.GetMouseButtonDown(0))
@@ -23,9 +26,7 @@ public class RayShoot : MonoBehaviour
 
     void Shoot()
     {
-        shootEffect.Play();
-        shootAudio.Play();
-        
+        weaponController.Trigger();
         RaycastHit hit;
         if (Physics.Raycast(cam.transform.position, cam.transform.forward, out hit))
         {
