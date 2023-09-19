@@ -1,10 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="c2bfee82-669f-4062-82d5-46dd61a891ed" name="Changes" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/.idea.Shooter TZ/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.Shooter TZ/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scenes/SampleScene.unity" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scenes/SampleScene.unity" afterDir="false" />
-    </list>
+    <list default="true" id="c2bfee82-669f-4062-82d5-46dd61a891ed" name="Changes" comment="Add colliders and ray shoot" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -18,28 +15,43 @@
   <component name="Git.Settings">
     <option name="RECENT_BRANCH_BY_REPOSITORY">
       <map>
-        <entry key="$PROJECT_DIR$" value="backup" />
+        <entry key="$PROJECT_DIR$" value="temp" />
       </map>
     </option>
+    <option name="RESET_MODE" value="MIXED" />
   </component>
   <component name="GitHubPullRequestSearchHistory">{
   &quot;lastFilter&quot;: {
     &quot;state&quot;: &quot;OPEN&quot;
   }
 }</component>
+  <component name="GitRewordedCommitMessages">
+    <option name="commitMessagesMapping">
+      <RewordedCommitMessageMapping>
+        <option name="originalMessage" value="temp" />
+        <option name="rewordedMessage" value="asd&#10;&#10;&#10;temp" />
+      </RewordedCommitMessageMapping>
+    </option>
+    <option name="currentCommit" value="1" />
+    <option name="onto" value="a84a6ff1f95048c0c3ff2a18a9504868730b8310" />
+  </component>
   <component name="GithubPullRequestsUISettings">
     <option name="selectedUrlAndAccountId">
       <UrlAndAccount>
         <option name="accountId" value="74831ee8-85ae-4b56-98ab-485522efa01c" />
-        <option name="url" value="https://github.com/LouiseFLBdV/Shooter-tz.git" />
+        <option name="url" value="https://github.com/LouiseFLBdV/shooter-tz.git" />
       </UrlAndAccount>
     </option>
   </component>
   <component name="HighlightingSettingsPerFile">
-    <setting file="file://$PROJECT_DIR$/../FPS Shooter/Assets/Scripts/Player/MouseLook.cs" root0="SKIP_HIGHLIGHTING" />
-    <setting file="mock://C:/Users/louis/Shooter TZ/Assets/Objects/Player/Player.controller" root0="SKIP_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/../FPS Shooter/Assets/Scripts/Player/MouseLook.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="mock://C:/Users/louis/Shooter TZ/Assets/Scenes/SampleScene.unity" root0="SKIP_HIGHLIGHTING" />
+    <setting file="mock://C:/Users/louis/Shooter TZ/Assets/Scripts/Player/MouseLook.cs" root0="SKIP_HIGHLIGHTING" />
     <setting file="mock://C:/Users/louis/Shooter TZ/Assets/Scripts/Player/MouseLook.cs" root0="SKIP_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Scripts/Player/MouseLook.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="mock://C:/Users/louis/Shooter TZ/Assets/Scripts/Player/MouseLook.cs" root0="SKIP_HIGHLIGHTING" />
+    <setting file="mock://C:/Users/louis/Shooter TZ/Assets/Scripts/Player/MouseLook.cs.meta" root0="SKIP_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/Scripts/RayShoot.cs" root0="FORCE_HIGHLIGHTING" />
   </component>
   <component name="MarkdownSettingsMigration">
     <option name="stateVersion" value="1" />
@@ -119,6 +131,8 @@
       <workItem from="1695036558436" duration="4018000" />
       <workItem from="1695043020263" duration="3561000" />
       <workItem from="1695048625441" duration="6258000" />
+      <workItem from="1695066985655" duration="4445000" />
+      <workItem from="1695073766256" duration="5659000" />
     </task>
     <task id="LOCAL-00001" summary="Initial commit">
       <created>1695048314629</created>
@@ -148,7 +162,56 @@
       <option name="project" value="LOCAL" />
       <updated>1695057145080</updated>
     </task>
-    <option name="localTasksCounter" value="5" />
+    <task id="LOCAL-00005" summary="Add World Map">
+      <created>1695067062841</created>
+      <option name="number" value="00005" />
+      <option name="presentableId" value="LOCAL-00005" />
+      <option name="project" value="LOCAL" />
+      <updated>1695067062841</updated>
+    </task>
+    <task id="LOCAL-00006" summary="Temp">
+      <created>1695074980333</created>
+      <option name="number" value="00006" />
+      <option name="presentableId" value="LOCAL-00006" />
+      <option name="project" value="LOCAL" />
+      <updated>1695074980333</updated>
+    </task>
+    <task id="LOCAL-00007" summary="Add colliders and RayShoot">
+      <created>1695076488320</created>
+      <option name="number" value="00007" />
+      <option name="presentableId" value="LOCAL-00007" />
+      <option name="project" value="LOCAL" />
+      <updated>1695076488320</updated>
+    </task>
+    <task id="LOCAL-00008" summary="asd">
+      <created>1695076550615</created>
+      <option name="number" value="00008" />
+      <option name="presentableId" value="LOCAL-00008" />
+      <option name="project" value="LOCAL" />
+      <updated>1695076550615</updated>
+    </task>
+    <task id="LOCAL-00009" summary="temp">
+      <created>1695084541302</created>
+      <option name="number" value="00009" />
+      <option name="presentableId" value="LOCAL-00009" />
+      <option name="project" value="LOCAL" />
+      <updated>1695084541302</updated>
+    </task>
+    <task id="LOCAL-00010" summary="asd">
+      <created>1695084614803</created>
+      <option name="number" value="00010" />
+      <option name="presentableId" value="LOCAL-00010" />
+      <option name="project" value="LOCAL" />
+      <updated>1695084614803</updated>
+    </task>
+    <task id="LOCAL-00011" summary="Add colliders and ray shoot">
+      <created>1695084742755</created>
+      <option name="number" value="00011" />
+      <option name="presentableId" value="LOCAL-00011" />
+      <option name="project" value="LOCAL" />
+      <updated>1695084742755</updated>
+    </task>
+    <option name="localTasksCounter" value="12" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -162,7 +225,19 @@
       <map>
         <entry key="MAIN">
           <value>
-            <State />
+            <State>
+              <option name="FILTERS">
+                <map>
+                  <entry key="branch">
+                    <value>
+                      <list>
+                        <option value="master" />
+                      </list>
+                    </value>
+                  </entry>
+                </map>
+              </option>
+            </State>
           </value>
         </entry>
       </map>
@@ -174,6 +249,12 @@
     <MESSAGE value="Gitignore" />
     <MESSAGE value="Add Player, animation and movement" />
     <MESSAGE value="Implemented animations for player" />
-    <option name="LAST_COMMIT_MESSAGE" value="Implemented animations for player" />
+    <MESSAGE value="Add World Map" />
+    <MESSAGE value="Temp" />
+    <MESSAGE value="Add colliders and RayShoot" />
+    <MESSAGE value="temp" />
+    <MESSAGE value="asd" />
+    <MESSAGE value="Add colliders and ray shoot" />
+    <option name="LAST_COMMIT_MESSAGE" value="Add colliders and ray shoot" />
   </component>
 </project>

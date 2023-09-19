@@ -11,6 +11,7 @@ GameObject:
   - component: {fileID: 9113521903959758239}
   - component: {fileID: 9113521903963149759}
   - component: {fileID: 9113521903962052479}
+  - component: {fileID: 6724284269010626667}
   m_Layer: 0
   m_Name: BigRock2
   m_TagString: Untagged
@@ -83,3 +84,17 @@ MeshRenderer:
   m_SortingLayer: 0
   m_SortingOrder: 0
   m_AdditionalVertexStreams: {fileID: 0}
+--- !u!64 &6724284269010626667
+MeshCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 9113521903959853503}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 4
+  m_Convex: 0
+  m_CookingOptions: 30
+  m_Mesh: {fileID: 4300000, guid: 96aaa09c10467274cbbf817bc514a254, type: 3}

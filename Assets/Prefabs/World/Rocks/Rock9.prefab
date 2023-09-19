@@ -11,6 +11,7 @@ GameObject:
   - component: {fileID: 6794142058631338262}
   - component: {fileID: 6794142058634762550}
   - component: {fileID: 6794142058633632758}
+  - component: {fileID: 6859038024227111376}
   m_Layer: 0
   m_Name: Rock9
   m_TagString: Untagged
@@ -83,3 +84,17 @@ MeshRenderer:
   m_SortingLayer: 0
   m_SortingOrder: 0
   m_AdditionalVertexStreams: {fileID: 0}
+--- !u!64 &6859038024227111376
+MeshCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 6794142058631431478}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 4
+  m_Convex: 0
+  m_CookingOptions: 30
+  m_Mesh: {fileID: 4300000, guid: a21de15aeea8b5d46a77a67a7e26f2e2, type: 3}
