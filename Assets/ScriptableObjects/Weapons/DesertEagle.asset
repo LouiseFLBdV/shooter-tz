@@ -13,6 +13,7 @@ MonoBehaviour:
   m_Name: DesertEagle
   m_EditorClassIdentifier: 
   _name: DesertEagle
-  _realoadTime: 5
+  _realoadTime: 4
   _damage: 50
-  _armoQuantity: 7
+  _ammoQuantity: 7
+  _attackSpeed: 1

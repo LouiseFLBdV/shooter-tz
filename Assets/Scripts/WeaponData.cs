@@ -9,10 +9,12 @@ public class WeaponData : ScriptableObject
     [SerializeField] private string _name;
     [SerializeField] private float _realoadTime;
     [SerializeField] private float _damage;
-    [SerializeField] private float _armoQuantity;
+    [SerializeField] private float _ammoQuantity;
+    [SerializeField] private float _attackSpeed;
 
     public new string name => this._name;
     public float reloadTime => this._realoadTime;
     public float damage => this._damage;
-    public float armoQuantity => this._armoQuantity;
+    public float ammoQuantity => this._ammoQuantity;
+    public float attackSpeed => this._attackSpeed;
 }

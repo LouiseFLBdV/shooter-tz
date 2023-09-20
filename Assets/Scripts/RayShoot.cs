@@ -10,7 +10,8 @@ public class RayShoot : MonoBehaviour
     public Camera cam;
     public ParticleSystem hitEffect;
     public WeaponController weaponController;
-
+    private float nextFireTime = 0;
+    public Inventory Inventory;
     private void Start()
     {
         weaponController = GetComponentInChildren<WeaponController>();
@@ -18,14 +19,23 @@ public class RayShoot : MonoBehaviour
 
     private void Update()
     {
-        if (Input.GetMouseButtonDown(0))
+        if (!weaponController.isReloading)
         {
-            Shoot();
+            if (weaponController.currentAmmo <= 0)
+            {
+                StartCoroutine(weaponController.Reload());
+            }
+            if (Input.GetMouseButtonDown(0) && Time.time >= nextFireTime)
+            {
+                Shoot();
+            }
         }
     }
-
+    
     void Shoot()
     {
+        weaponController.currentAmmo--;
+        nextFireTime = Time.time + weaponController.attackSpeed;
         weaponController.Trigger();
         RaycastHit hit;
         if (Physics.Raycast(cam.transform.position, cam.transform.forward, out hit))
@@ -33,7 +43,7 @@ public class RayShoot : MonoBehaviour
             EnemyController target = hit.transform.GetComponent<EnemyController>();
             if (target != null)
             {
-                target.TakeDamage(10);
+                target.TakeDamage(weaponController.damage);
             }
 
             Instantiate(hitEffect, hit.point, Quaternion.LookRotation(hit.normal));

@@ -15,4 +15,5 @@ MonoBehaviour:
   _name: SMG
   _realoadTime: 5
   _damage: 30
-  _armoQuantity: 50
+  _ammoQuantity: 50
+  _attackSpeed: 0.3
