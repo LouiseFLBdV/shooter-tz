@@ -1,12 +1,12 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="c2bfee82-669f-4062-82d5-46dd61a891ed" name="Changes" comment="Add Inventory logic">
+    <list default="true" id="c2bfee82-669f-4062-82d5-46dd61a891ed" name="Changes" comment="Implemented change weapon and render ammo">
       <change beforePath="$PROJECT_DIR$/.idea/.idea.Shooter TZ/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.Shooter TZ/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Prefabs/World/House/House1.prefab" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Prefabs/World/House/House1.prefab" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Prefabs/Characters/Player.prefab" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Prefabs/Characters/Player.prefab" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Prefabs/UI/GameInterface.prefab" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Prefabs/UI/GameInterface.prefab" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Assets/Scenes/SampleScene.unity" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scenes/SampleScene.unity" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/RayShoot.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/RayShoot.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/WeaponController.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/WeaponController.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ProjectSettings/EditorBuildSettings.asset" beforeDir="false" afterPath="$PROJECT_DIR$/ProjectSettings/EditorBuildSettings.asset" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -56,6 +56,7 @@
     <setting file="file://$PROJECT_DIR$/Assets/Scripts/EnemyData.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Scripts/Player/MouseLook.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Scripts/Player/PlayerHealthBar.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/Scripts/SceneManager/SceneLoader.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Scripts/WeaponController.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Scripts/WeaponData.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Scripts/inventory/Inventory.cs" root0="FORCE_HIGHLIGHTING" />
@@ -144,7 +145,7 @@
       <workItem from="1695096919415" duration="11340000" />
       <workItem from="1695111714034" duration="9372000" />
       <workItem from="1695124132231" duration="4425000" />
-      <workItem from="1695188200423" duration="8682000" />
+      <workItem from="1695188200423" duration="10903000" />
     </task>
     <task id="LOCAL-00001" summary="Initial commit">
       <created>1695048314629</created>
@@ -258,7 +259,21 @@
       <option name="project" value="LOCAL" />
       <updated>1695193518242</updated>
     </task>
-    <option name="localTasksCounter" value="17" />
+    <task id="LOCAL-00017" summary="Implemented change armo and render armo quantity">
+      <created>1695215522161</created>
+      <option name="number" value="00017" />
+      <option name="presentableId" value="LOCAL-00017" />
+      <option name="project" value="LOCAL" />
+      <updated>1695215522161</updated>
+    </task>
+    <task id="LOCAL-00018" summary="Implemented change weapon and render ammo">
+      <created>1695216038793</created>
+      <option name="number" value="00018" />
+      <option name="presentableId" value="LOCAL-00018" />
+      <option name="project" value="LOCAL" />
+      <updated>1695216038793</updated>
+    </task>
+    <option name="localTasksCounter" value="19" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -307,6 +322,8 @@
     <MESSAGE value="Implement Enemy System with Animation and Damage Mechanics" />
     <MESSAGE value="Add HealthBar" />
     <MESSAGE value="Add Inventory logic" />
-    <option name="LAST_COMMIT_MESSAGE" value="Add Inventory logic" />
+    <MESSAGE value="Implemented change armo and render armo quantity" />
+    <MESSAGE value="Implemented change weapon and render ammo" />
+    <option name="LAST_COMMIT_MESSAGE" value="Implemented change weapon and render ammo" />
   </component>
 </project>
