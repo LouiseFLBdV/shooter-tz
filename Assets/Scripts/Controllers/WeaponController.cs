@@ -9,6 +9,7 @@ public class WeaponController : MonoBehaviour
 {
     public AudioSource shootAudio;
     public AudioSource ReloadAudio;
+    public AudioSource TakeAudio;
     public ParticleSystem shootEffect;
     public WeaponData weaponData;
     public Text texCurrentAmmo;
@@ -36,6 +37,11 @@ public class WeaponController : MonoBehaviour
     {
         shootEffect.Play();
         shootAudio.Play();
+        texCurrentAmmo.text = currentAmmo + " / " + ammoQuantity;
+    }    
+    public void ChangeWeapon()
+    {
+        TakeAudio.Play();
         texCurrentAmmo.text = currentAmmo + " / " + ammoQuantity;
     }
 

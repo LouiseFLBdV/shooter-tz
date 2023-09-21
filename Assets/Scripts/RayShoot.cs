@@ -42,7 +42,7 @@ public class RayShoot : MonoBehaviour
 
     private void HandleShooting()
     {
-        if (Input.GetMouseButtonDown(0) && !weapons[currentWeaponIndex].isReloading)
+        if (Input.GetMouseButtonDown(0))
         {
             if (weapons[currentWeaponIndex].currentAmmo <= 0)
             {
@@ -59,6 +59,7 @@ public class RayShoot : MonoBehaviour
         weapons[currentWeaponIndex].gameObject.SetActive(false);
         currentWeaponIndex = Mathf.Clamp(newIndex, 0, weapons.Length - 1);
         weapons[currentWeaponIndex].gameObject.SetActive(true);
+        weapons[currentWeaponIndex].ChangeWeapon();
     }
 
     private void Shoot()
