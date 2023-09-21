@@ -8,15 +8,17 @@ public class EnemyController : MonoBehaviour
 {
     public EnemyData enemyData;
     public GameObject player;
+    public LevelController levelController;
 
     private Animator _animator;
     private float _health;
     private float _speed;
     private float _damage;
-    private int _animationMoveType = 0;
-    private float _lastAttackTime; 
-    private float _attackCooldown; 
-
+    private int _animationMoveType;
+    private float _lastAttackTime;
+    private float _attackCooldown;
+    private float _detectionPlayer;
+    
     private void Start()
     {
         InitializeEnemy();
@@ -61,7 +63,7 @@ public class EnemyController : MonoBehaviour
             {
                 _animator.SetBool("Attack", true);
                 player.GetComponent<PlayerController>().TakeDamage(_damage);
-                _lastAttackTime = Time.time; 
+                _lastAttackTime = Time.time;
             }
         }
     }
@@ -70,14 +72,23 @@ public class EnemyController : MonoBehaviour
     {
         _animator.SetBool("Die", true);
         yield return new WaitForSeconds(3);
+        levelController.RemoveEnemy(gameObject);
         Destroy(gameObject);
     }
 
     private void HandleMovement()
     {
         float distanceToPlayer = Vector3.Distance(transform.position, player.transform.position);
-
-        if (distanceToPlayer > 1 && distanceToPlayer < 9)
+        if (_health < enemyData.health)
+        {
+            _detectionPlayer = 50;
+            _speed = enemyData.speed * 1.5f;
+        }
+        else
+        {
+            _detectionPlayer = 9;
+        }
+        if (distanceToPlayer > 1 && distanceToPlayer < _detectionPlayer)
         {
             if (_animationMoveType == 0)
             {
@@ -86,8 +97,7 @@ public class EnemyController : MonoBehaviour
 
             _animator.SetInteger("Move", _animationMoveType);
             transform.LookAt(player.transform.position);
-            transform.position = Vector3.MoveTowards(transform.position, player.transform.position,
-                _speed * Time.deltaTime);
+            transform.position = Vector3.MoveTowards(transform.position, player.transform.position, _speed * Time.deltaTime);
         }
         else
         {

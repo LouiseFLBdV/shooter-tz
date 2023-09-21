@@ -14,7 +14,7 @@ public class WeaponController : MonoBehaviour
     public Text texCurrentAmmo;
     
     public bool isReloading = false;
-    public string name;
+    // public string name;
     public float reloadTime;
     public float damage;
     public float ammoQuantity;
@@ -23,7 +23,7 @@ public class WeaponController : MonoBehaviour
 
     private void Start()
     {
-        name = weaponData.name;
+        // name = weaponData.name;
         reloadTime = weaponData.reloadTime;
         damage = weaponData.damage;
         ammoQuantity = weaponData.ammoQuantity;

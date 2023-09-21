@@ -13,6 +13,7 @@ public class PlayerController : MonoBehaviour
     private bool _running = false;
 
     public PlayerHealthBar playerHealthBar;
+    public LevelController levelController;
     private Animator _playerAnimator;
 
     private void Start()
@@ -66,9 +67,10 @@ public class PlayerController : MonoBehaviour
         if (health > 0)
         {
             health -= damageTaken;
-            playerHealthBar.changeHealphBar(health);
+            playerHealthBar.ChangeHealphBar(health);
             if (health <= 0)
             {
+                levelController.HandleLose();
                 Destroy(this);
             }
         }

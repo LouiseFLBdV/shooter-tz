@@ -7,7 +7,7 @@ public class PlayerHealthBar : MonoBehaviour
 {
     public Slider slider;
 
-    public void changeHealphBar(float health)
+    public void ChangeHealphBar(float health)
     {
         slider.value = health;
     }

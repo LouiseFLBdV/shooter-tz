@@ -8,57 +8,65 @@ using UnityEngine.Serialization;
 public class RayShoot : MonoBehaviour
 {
     public Camera cam;
-    public ParticleSystem hitEffect;
     public WeaponController[] weapons;
-    private float nextFireTime = 0;
-    public Inventory Inventory;
-    public int currentWeaponIndex = 0;
+    public ParticleSystem hitEffect;
+
+    private int currentWeaponIndex;
+    private float nextFireTime;
 
     private void Start()
     {
         if (weapons.Length > 0)
         {
-            weapons[currentWeaponIndex].gameObject.SetActive(true);
+            SetActiveWeapon(currentWeaponIndex);
         }
     }
 
     private void Update()
     {
+        HandleWeaponSwitching();
+        if (!weapons[currentWeaponIndex].isReloading)
+        {
+            HandleShooting();
+        }
+    }
+
+    private void HandleWeaponSwitching()
+    {
         float scrollWheelInput = Input.GetAxis("Mouse ScrollWheel");
         if (scrollWheelInput != 0)
         {
-            weapons[currentWeaponIndex].gameObject.SetActive(false);
-            currentWeaponIndex += (scrollWheelInput > 0) ? 1 : -1;
-            if (currentWeaponIndex < 0)
-            {
-                currentWeaponIndex = weapons.Length - 1;
-            }
-            else if (currentWeaponIndex >= weapons.Length)
-            {
-                currentWeaponIndex = 0;
-            }
-            weapons[currentWeaponIndex].gameObject.SetActive(true);
+            SetActiveWeapon(currentWeaponIndex + (scrollWheelInput > 0 ? 1 : -1));
         }
+    }
 
-        if (!weapons[currentWeaponIndex].isReloading)
+    private void HandleShooting()
+    {
+        if (Input.GetMouseButtonDown(0) && !weapons[currentWeaponIndex].isReloading)
         {
             if (weapons[currentWeaponIndex].currentAmmo <= 0)
             {
                 StartCoroutine(weapons[currentWeaponIndex].Reload());
-            }
-
-            if (Input.GetMouseButtonDown(0) && Time.time >= nextFireTime)
+            } else if (Time.time >= nextFireTime)
             {
                 Shoot();
             }
         }
     }
 
-    void Shoot()
+    private void SetActiveWeapon(int newIndex)
+    {
+        weapons[currentWeaponIndex].gameObject.SetActive(false);
+        currentWeaponIndex = Mathf.Clamp(newIndex, 0, weapons.Length - 1);
+        weapons[currentWeaponIndex].gameObject.SetActive(true);
+    }
+
+    private void Shoot()
     {
         weapons[currentWeaponIndex].currentAmmo--;
         nextFireTime = Time.time + weapons[currentWeaponIndex].attackSpeed;
         weapons[currentWeaponIndex].ShootEffect();
+        
         RaycastHit hit;
         if (Physics.Raycast(cam.transform.position, cam.transform.forward, out hit))
         {
